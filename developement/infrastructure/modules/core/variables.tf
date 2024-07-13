@@ -1,3 +1,7 @@
+variable "aws_region" {
+  description = "AWS region name"
+}
+
 variable "vpc_cidr" {
   description = "The CIDR block for the VPC"
   type        = string
@@ -27,3 +31,12 @@ variable "environment" {
   description = "The environment name"
   type        = string
 }
+
+variable "az_limit" {
+  description = "A limit of availability zones to deploy to."
+}
+
+
+# variable "aws_internet_gateway" {
+#   type = string
+# }
